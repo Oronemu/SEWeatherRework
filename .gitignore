@@ -1,0 +1,46 @@
+
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+
+# OS X
+*DS_Store
+
+# IDE
+.idea/
+*.xcodeproj/xcuserdata/*
+*.xcodeproj/project.xcworkspace/xcuserdata/*
+*.xcodeproj/project.xcworkspace/xcshareddata/*
+*.xcworkspace/xcuserdata/*
+*.xcworkspace/xcuserdata/*
+
+# Clean utility
+default.profraw
+
+# Managers
+Carthage/*
+Cartfile.resolved
+Pods/*
+Podfile.lock
+yarn.lock
+package-lock.json
+node_modules/*
+R.generated.swift
+
+# Fastlane / CI /CD
+build
+*.ipa
+*.ipa.zip
+fastlane/*
+!fastlane/.env*
+
+### Projects ##
+*.xcodeproj/*
+*.xcworkspace/*
+### Tuist derived files ###
+graph.dot
+Derived/
+Tuist/Dependencies/
