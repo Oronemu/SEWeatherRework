@@ -29,6 +29,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       disableMainThreadChecker = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2C3B2A502A839FF40054B425"
+               BuildableName = "ForecastWeatherTests.xctest"
+               BlueprintName = "ForecastWeatherTests"
+               ReferencedContainer = "container:ForecastWeather.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

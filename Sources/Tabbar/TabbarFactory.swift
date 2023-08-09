@@ -31,8 +31,8 @@ extension TabbarFactoryImplementation: TabbarFactory {
         let forecastWeatherFactory = container.resolve(ForecastWeatherFactory.self)!
         
         return AnyView(Tabbar(
-            currentWeather: currentWeatherFactory.createCurrentWeatherView(),
-            forecastWeather: forecastWeatherFactory.createForecastWeather()
+            currentWeather: currentWeatherFactory,
+            forecastWeather: forecastWeatherFactory
         ))
     }
 }

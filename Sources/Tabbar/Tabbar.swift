@@ -15,23 +15,23 @@ struct Tabbar: View {
     
     @State private var selectedTab: Int = 1
     
-    private let currentWeather: AnyView
-    private let forecastWeather: AnyView
+    private let currentWeather: CurrentWeatherFactory
+    private let forecastWeather: ForecastWeatherFactory
     
-    init(currentWeather: AnyView, forecastWeather: AnyView) {
+    init(currentWeather: CurrentWeatherFactory, forecastWeather: ForecastWeatherFactory) {
         self.currentWeather = currentWeather
         self.forecastWeather = forecastWeather
     }
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            currentWeather
+            currentWeather.createCurrentWeatherView()
                 .tabItem {
                     Image(systemName: "location.fill")
                     Text("Home")
                 }
                 .tag(1)
-            forecastWeather
+            forecastWeather.createForecastWeather()
                 .tabItem {
                     Image(systemName: "cloud.sun.rain.fill")
                     Text("Forecast")
